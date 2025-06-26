@@ -19,7 +19,7 @@
             color: #2a3d26;
             color: #2a3d26;
             overflow-x: hidden;
-            line-height: 1.6;
+            line-height: 1.6001;
             position: relative;
         }
 
@@ -400,11 +400,11 @@
                 display: none;
             }
 
-            /* Hide shapes on mobile for performance */
+
         }
     </style>
     <style>
-        /* Pictures Section Styles */
+        /* sscroling pics */
         .pictures {
             margin-top: 2em;
             padding: 20px;
@@ -456,12 +456,12 @@
             transform: scale(1.02);
         }
 
-        /* Scrollbar Styling */
+        /* Side scrollbaar */
         .gallery-container::-webkit-scrollbar {
             display: none;
         }
 
-        /* Fading effect */
+        /* Fading  */
         .gallery-container::before,
         .gallery-container::after {
             content: '';
@@ -523,7 +523,7 @@
             const gallery = document.querySelector('.gallery');
             const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
 
-            // Clone the gallery items to make scrolling seamless
+            // Clone the gallery items to make scrolling inf
             function cloneItems() {
                 galleryItems.forEach(item => {
                     const clone = item.cloneNode(true);
@@ -548,10 +548,10 @@
             let scrollAmount = 0;
 
             function step() {
-                scrollAmount += 1; // Adjust speed here
+                scrollAmount += 1; // its speeed
 
                 if (scrollAmount >= totalWidth / 2) {
-                    // Reset when scrolled past the original gallery width (half total width)
+                    // Reset when scrolled past the original gallery widt
                     scrollAmount = 0;
                 }
 
