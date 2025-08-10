@@ -59,11 +59,11 @@ document.addEventListener('click', (e) => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const images = [
-    'BigBoba1.png',
-    'BigBoba2.png',
     'RaphaSlide1.png',
     'RaphaSlide2.png',
-    'RaphaSlide3.png'
+    'RaphaSlide3.png',
+    'RaphaSlide4.png',
+    'RolledIceSC-1.png'
   ];
 
   // Preload images
