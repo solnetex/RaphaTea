@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You - Rapha Tea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Paste your CSS here (trimmed for brevity) */
+    :root {
+      --color-bg: #f5f7f2;
+      --color-surface: #ffffff;
+      --color-primary: #8aaf64;
+      --color-primary-600: #729351;
+      --color-secondary: #b4c89d;
+      --color-accent: #ffcc66;
+      --color-text: #2a3d26;
+      --color-muted: #6a7b63;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --max-w: 1200px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--color-bg); color: var(--color-text); line-height: 1.7; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -10% -10% -10% -10%;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(120px 120px at 10% 15%, rgba(138,175,100,0.12), transparent 60%),
+        radial-gradient(140px 140px at 80% 12%, rgba(180,200,157,0.10), transparent 60%),
+        radial-gradient(90px 90px at 15% 70%, rgba(207,226,188,0.12), transparent 55%),
+        radial-gradient(110px 110px at 85% 75%, rgba(180,200,157,0.10), transparent 60%),
+        radial-gradient(80px 80px at 45% 20%, rgba(255,204,102,0.10), transparent 60%),
+        radial-gradient(100px 100px at 50% 90%, rgba(138,175,100,0.08), transparent 60%);
+      transform: translate3d(0, 0, 0);
+      animation: ambient-drift 32s ease-in-out infinite alternate;
+    }
+    @keyframes ambient-drift {
+      0% { transform: translate3d(0, 0, 0); }
+      50% { transform: translate3d(0, -18px, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+      margin-bottom: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    p.lead {
+      font-size: 1.125rem;
+      color: var(--color-muted);
+      margin-bottom: 40px;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: #fff;
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 32px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--color-primary-600), var(--color-primary));
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .btn-primary:active {
+      transform: translateY(1px) scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Thank You for Contacting Us!</h1>
+    <p class="lead">We appreciate you reaching out. We'll get back to you shortly.</p>
+    <a href="/" class="btn-primary" aria-label="Go back to homepage">Go Back Home</a>
+  </div>
+</body>
+</html>
